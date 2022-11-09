@@ -1,11 +1,15 @@
 h1 {
-  font-size: 45px;
+  font-size: 60px;
   color: #555;
   margin-bottom: 30px;
 }
 
+.btn-section {
+  display: flex;
+  gap: 20px;
+}
+
 button {
-  margin: 0px 10px;
   padding: 10px 24px;
   font-size: 20px;
   color: #fff;
@@ -13,4 +17,15 @@ button {
   border-radius: 5px;
   border: 2px solid;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .btn-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 180px;
+  }
 }
